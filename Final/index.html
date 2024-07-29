@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control de Riego Automático</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Macetita Panel de Control </h1>
+        <div class="data-card card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Datos del Vivero</h5>
+                <p id="date" class="card-text">Fecha: --</p>
+                <p id="soil-moisture" class="card-text">Humedad del Suelo: --%</p>
+                <p id="temperature" class="card-text">Temperatura: -- °C</p>
+                <p id="humidity" class="card-text">Humedad: --%</p>
+                <button id="simulate-btn" class="btn btn-primary">Simular Datos</button>
+                <button id="irrigate-btn" class="btn btn-success">Iniciar Riego</button>
+                <button id="load-data-btn" class="btn btn-info">Cargar Datos</button>
+            </div>
+        </div>
+        
+        <h5 class="text-center">Gráfico de Datos</h5>
+        <div class="chart-container">
+            <canvas id="dataChart"></canvas>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script> 
+</body>
+</html>

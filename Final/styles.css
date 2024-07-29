@@ -1,0 +1,19 @@
+body {
+    padding: 20px;
+    background-color: #e9ecef; /* Color de fondo más apropiado */
+}
+.data-card {
+    margin-bottom: 20px;
+}
+.btn-simulate {
+    margin-top: 10px;
+}
+h1 {
+    margin-bottom: 20px;
+}
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 40vh;
+    width: 80vw;
+}
